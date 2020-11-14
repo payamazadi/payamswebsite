@@ -14,8 +14,8 @@ const useSiteMetadata = () => {
               contacts {
                 facebook
                 linkedin
-                github
                 twitter
+                github
                 telegram
                 instagram
                 email

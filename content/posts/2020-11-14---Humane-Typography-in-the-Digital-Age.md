@@ -1,15 +1,13 @@
 ---
 title: Humane Typography in the Digital Age
-date: "2017-08-19T22:40:32.169Z"
+date: "2020-11-14T22:40:32.169Z"
 template: "post"
 draft: false
-slug: "humane-typography-in-the-digital-age"
-category: "Typography"
+slug: "under-construction"
+category: "Leadership"
 tags:
-  - "Design"
-  - "Typography"
-  - "Web Development"
-description: "An Essay on Typography by Eric Gill takes the reader back to the year 1930. The year when a conflict between two worlds came to its term. The machines of the industrial world finally took over the handicrafts."
+  - "Leadership"
+description: "Under construction"
 socialImage: "/media/42-line-bible.jpg"
 ---
 
@@ -76,5 +74,3 @@ We lost a part of ourselves because of this chase after perfection. We forgot ab
 ## Chasing perfection
 
 Human beings aren’t perfect. Perfection is something that will always elude us. There will always be a small part of humanity in everything we do. No matter how small that part, we should make sure that it transcends the limits of the medium. We have to think about the message first. What typeface should we use and why? Does the typeface match the message and what we want to communicate with it? What will be the leading and why? Will there be more typefaces in our design? On what ground will they be combined? What makes our design unique and why? This is the part of humanity that is left in typography. It might be the last part. Are we really going to give it up?
-
-*Originally published by [Matej Latin](http://matejlatin.co.uk/) on [Medium](https://medium.com/design-notes/humane-typography-in-the-digital-age-9bd5c16199bd?ref=webdesignernews.com#.lygo82z0x).*

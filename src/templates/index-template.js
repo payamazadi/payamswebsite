@@ -28,17 +28,23 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
   const { edges } = data.allMarkdownRemark;
   const pageTitle = currentPage > 0 ? `Posts - Page ${currentPage} - ${siteTitle}` : siteTitle;
 
+  let pagination = null;
+  if(hasNextPage === true || hasPrevPage === true){
+    pagination = <Pagination
+        prevPagePath={prevPagePath}
+        nextPagePath={nextPagePath}
+        hasPrevPage={hasPrevPage}
+        hasNextPage={hasNextPage}
+      />
+  }
+
+
   return (
     <Layout title={pageTitle} description={siteSubtitle}>
       <Sidebar isIndex />
       <Page>
         <Feed edges={edges} />
-        <Pagination
-          prevPagePath={prevPagePath}
-          nextPagePath={nextPagePath}
-          hasPrevPage={hasPrevPage}
-          hasNextPage={hasNextPage}
-        />
+        {pagination}
       </Page>
     </Layout>
   );
