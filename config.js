@@ -3,7 +3,7 @@
 module.exports = {
   url: 'https://www.azadismind.com',
   pathPrefix: '/',
-  title: 'Engineering Management, by Payam Azadi',
+  title: 'Product & Tech Management, by Payam Azadi',
   subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
   copyright: '© All rights reserved.',
   disqusShortname: '',
@@ -12,7 +12,7 @@ module.exports = {
   useKatex: false,
   menu: [
     {
-      label: 'Articles',
+      label: 'Essays',
       path: '/'
     },
     {
@@ -30,14 +30,14 @@ module.exports = {
     bio: 'This is my bio',
     contacts: {
       email: '',
-      facebook: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
+      facebook: '',
+      telegram: '',
+      twitter: 'payamazadi',
+      github: 'payamazadi',
       rss: '',
       vkontakte: '',
-      linkedin: '#',
-      instagram: '#',
+      linkedin: 'payamazadi',
+      instagram: '',
       line: '',
       gitlab: '',
       weibo: '',

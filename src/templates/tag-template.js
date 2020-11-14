@@ -30,7 +30,7 @@ const TagTemplate = ({ data, pageContext }: Props) => {
   const pageTitle = currentPage > 0 ? `All Posts tagged as "${tag}" - Page ${currentPage} - ${siteTitle}` : `All Posts tagged as "${tag}" - ${siteTitle}`;
 
   return (
-    <Layout title={pageTitle} description={siteSubtitle}>
+    <Layout title={pageTitle} description={siteSubtitle} noIndex={true}>
       <Sidebar />
       <Page title={tag}>
         <Feed edges={edges} />

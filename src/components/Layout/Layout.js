@@ -16,12 +16,19 @@ const Layout = ({
   children,
   title,
   description,
-  socialImage
+  socialImage,
+  noIndex
 }: Props) => {
   const { author, url } = useSiteMetadata();
   const metaImage = typeof socialImage !== 'undefined' ? socialImage : author.photo;
   const metaImageUrl = url + metaImage;
 
+  let noIndexMeta;
+  if(noIndex) {
+    noIndexMeta = <meta name="robots" content="noindex, nofollow" />
+  } else {
+
+  }
   return (
     <div className={styles.layout}>
       <Helmet>
@@ -34,6 +41,7 @@ const Layout = ({
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={metaImageUrl} />
+        {noIndexMeta}
       </Helmet>
       {children}
     </div>
