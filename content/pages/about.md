@@ -2,6 +2,7 @@
 title: "About me"
 template: "page"
 socialImage: "/media/image-2.jpg"
+date: "2020-11-14T22:40:32.169Z"
 ---
 
 LALALALALL habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.

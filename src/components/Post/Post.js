@@ -20,23 +20,18 @@ const Post = ({ post }: Props) => {
 
   return (
     <div className={styles['post']}>
-      <Link className={styles['post__home-button']} to="/">Home</Link>
-
       <div className={styles['post__content']}>
         <Content body={html} title={title} />
       </div>
 
-      <div className={styles['post__footer']}>
-        <Meta date={date} />
+      <div className={styles['post__footer']}>   
         {tags && tagSlugs && <Tags tags={tags} tagSlugs={tagSlugs} />}
-        <Link className="poopie" to="/">Home</Link>  
+        <Meta date={date} />
       </div>
 
       <div className={styles['post__comments']}>
         <Comments postSlug={slug} postTitle={post.frontmatter.title} />
       </div>
-
-      
     </div>
   );
 };

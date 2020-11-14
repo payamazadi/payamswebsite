@@ -5,6 +5,7 @@ import type { Node as ReactNode } from 'react';
 import { useSiteMetadata } from '../../hooks';
 import styles from './Layout.module.scss';
 
+
 type Props = {
   children: ReactNode,
   title: string,
@@ -19,16 +20,15 @@ const Layout = ({
   socialImage,
   noIndex
 }: Props) => {
-  const { author, url } = useSiteMetadata();
+  const { author, url, copyright } = useSiteMetadata();
   const metaImage = typeof socialImage !== 'undefined' ? socialImage : author.photo;
   const metaImageUrl = url + metaImage;
 
   let noIndexMeta;
   if(noIndex) {
     noIndexMeta = <meta name="robots" content="noindex, nofollow" />
-  } else {
-
   }
+
   return (
     <div className={styles.layout}>
       <Helmet>

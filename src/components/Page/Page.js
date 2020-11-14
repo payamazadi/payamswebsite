@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import styles from './Page.module.scss';
+import { useSiteMetadata } from '../../hooks';
 
 type Props = {
   title?: string,
@@ -8,10 +9,7 @@ type Props = {
 
 const Page = ({ title, children }: Props) => {
   const pageRef = useRef();
-
-  useEffect(() => {
-    pageRef.current.scrollIntoView();
-  });
+  const { author, copyright, menu } = useSiteMetadata();
 
   return (
     <div ref={pageRef} className={styles['page']}>
