@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react';
+import Copyright from '../Sidebar/Copyright';
 import styles from './Page.module.scss';
 import { useSiteMetadata } from '../../hooks';
 

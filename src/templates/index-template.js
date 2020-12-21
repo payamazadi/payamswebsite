@@ -3,6 +3,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Sidebar from '../components/Sidebar';
+import Copyright from '../components/Sidebar/Copyright';
 import Feed from '../components/Feed';
 import Page from '../components/Page';
 import Pagination from '../components/Pagination';
@@ -15,7 +16,7 @@ type Props = {
 };
 
 const IndexTemplate = ({ data, pageContext }: Props) => {
-  const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
+  const { title: siteTitle, subtitle: siteSubtitle, copyright } = useSiteMetadata();
 
   const {
     currentPage,
@@ -45,7 +46,9 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
       <Page>
         <Feed edges={edges} />
         {pagination}
+        <Copyright copyright={copyright} />
       </Page>
+      
     </Layout>
   );
 };

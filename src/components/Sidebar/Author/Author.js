@@ -14,26 +14,29 @@ type Props = {
 
 const Author = ({ author, isIndex }: Props) => (
   <div className={styles['author']}>
-    <Link to="/">
+    <Link to="/" style={{float:"left", paddingRight: "15px", marginBottom:"0px", paddingTop: "20px", width:"128px;"}}>
       <img
         src={withPrefix(author.photo)}
         className={styles['author__photo']}
-        width="75"
-        height="75"
+        width="128"
+        height="128"
+        align="right"
         alt={author.name}
       />
     </Link>
 
-    { isIndex === true ? (
-      <h1 className={styles['author__title']}>
-        <Link className={styles['author__title-link']} to="/">{author.name}</Link>
-      </h1>
-    ) : (
-      <h2 className={styles['author__title']}>
-        <Link className={styles['author__title-link']} to="/">{author.name}</Link>
-      </h2>
-    )}
-    <p className={styles['author__subtitle']}>{author.bio}</p>
+    <div style={{float:"left"}}>
+      { isIndex === true ? (
+        <div className={styles['author__title']}>
+          <Link className={styles['author__title-link']} to="/">{author.name}</Link>
+        </div>
+      ) : (
+        <h2 className={styles['author__title']}>
+          <Link className={styles['author__title-link']} to="/">{author.name}</Link>
+        </h2>
+      )}
+      <div className={styles['author__subtitle']}>{author.bio}</div>
+    </div>
   </div>
 );
 

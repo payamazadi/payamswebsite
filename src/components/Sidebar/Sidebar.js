@@ -2,7 +2,6 @@
 import React from 'react';
 import Author from './Author';
 import Contacts from './Contacts';
-import Copyright from '../Sidebar/Copyright/Copyright';
 import Menu from './Menu';
 import styles from './Sidebar.module.scss';
 import { useSiteMetadata } from '../../hooks';
@@ -19,7 +18,7 @@ const Sidebar = ({ isIndex, simplified }: Props) => {
   if(!simplified){
     fullMarkup = <React.Fragment>
         <Contacts contacts={author.contacts} />
-        <Copyright copyright={copyright} />
+        
       </React.Fragment>
   }
   
@@ -27,8 +26,12 @@ const Sidebar = ({ isIndex, simplified }: Props) => {
     <div className={styles['sidebar']}>
       <div className={styles['sidebar__inner']}>
         <Author author={author} isIndex={isIndex} />
-        <Menu menu={menu} />
+        
+        <div style={{clear: "left"}}>
+          <Menu menu={menu} />
+        </div>
         {fullMarkup}
+        
       </div>
     </div>
   );

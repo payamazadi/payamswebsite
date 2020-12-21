@@ -23,7 +23,7 @@ module.exports = {
   author: {
     name: 'Payam Azadi',
     photo: '/photo.jpg',
-    bio: 'This is my bio',
+    bio: 'Leading software engineering teams in delivering remarkable products for over 15 years. Iranian-American, black belt, lover of cats.',
     contacts: {
       email: '',
       facebook: '',
