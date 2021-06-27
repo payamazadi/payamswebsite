@@ -7,7 +7,7 @@ slug: "software-engineer-interview-code-test"
 category: "Management"
 tags:
   - "Management"
-description: "Some pros and cons about code tests and whether they may be a good fit for your team."
+description: "Some pros and cons about code tests and whether they may be a good fit for your team's recruiting process."
 socialImage: "/media/42-line-bible.jpg"
 ---
 
