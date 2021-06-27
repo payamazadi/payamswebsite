@@ -1,5 +1,5 @@
 ---
-title: "Are code tests a good idea for your software engineering team?"
+title: "Are code tests a good idea for your interviewing software engineerings?"
 date: "2021-05-25T22:40:32.169Z"
 template: "post"
 draft: false
@@ -7,7 +7,7 @@ slug: "software-engineer-interview-code-test"
 category: "Management"
 tags:
   - "Management"
-description: "Some pros and cons about code tests and whether they may be a good fit for your team\""
+description: "Some pros and cons about code tests and whether they may be a good fit for your team"
 socialImage: "/media/42-line-bible.jpg"
 ---
 
